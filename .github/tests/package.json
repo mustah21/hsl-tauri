@@ -1,0 +1,14 @@
+{
+  "name": "playwright-hsl-planner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tests for Better HSL Router",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@playwright/test": "1.58.2"
+  }
+}

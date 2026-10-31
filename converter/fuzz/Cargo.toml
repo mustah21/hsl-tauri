@@ -1,0 +1,28 @@
+[package]
+name = "converter-fuzz"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4.7"
+converter = { path = ".." }
+arbitrary = { version = "1.4.1", features = ["derive"] }
+
+[[bin]]
+name = "geojson_parsing"
+path = "fuzz_targets/geojson_parsing.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "coordinate_quantize"
+path = "fuzz_targets/coordinate_quantize.rs"
+test = false
+doc = false
+
+# Declare standalone workspace so cargo-fuzz does not inherit the root workspace
+[workspace]

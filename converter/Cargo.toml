@@ -1,0 +1,29 @@
+[package]
+name = "converter"
+description = "Convert datasets to more optimized and compressed binaries"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[lib]
+name = "converter"
+path = "src/lib.rs"
+
+[[bin]]
+# Address lookup and reverse geocoding optimizer
+name = "lookup"
+path = "src/bin/lookup.rs"
+
+[[bin]]
+# HSL route information optimizer
+name = "routes"
+path = "src/bin/routes.rs"
+
+[dependencies]
+anyhow = "1.0.102"
+serde_json = "1.0.149"
+bitcode = { version = "0.6.9", features = ["serde"] }
+zstd = "0.13.3"
+rstar = { version = "0.12.2", features = ["serde"] }
+serde = { version = "1.0.228", features = ["derive"] }
+csv = "1.4.0"

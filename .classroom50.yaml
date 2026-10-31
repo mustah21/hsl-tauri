@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "wasm-rust"
+assignment: "6-tauri-hsl-routes"
+owner:
+  username: "mustah21"
+  id: 178799777
+  accepted_at: "2026-10-28T12:58:08Z"
+source:
+  owner: "Metropolia-WebAssembly-Rust"
+  owner_id: 316601024
+  repo: "6-tauri-hsl-routes"
+  branch: "main"

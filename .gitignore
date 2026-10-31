@@ -1,0 +1,66 @@
+# Rust/Cargo build artifacts
+target/
+dist/
+gen/schemas
+
+# Rust debugging symbols
+debug/
+*.pdb
+
+# Rust coverage reports
+*.profraw
+tarpaulin-report.html
+lcov.info
+coverage/
+cobertura.xml
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+.cache
+
+# WASM-specific files
+*.wasm
+pkg/
+wasm-pack.log
+
+# Node.js dependencies (if using wasm-pack with npm)
+node_modules/
+*.tgz
+
+# Rust-specific backup files
+**/*.rs.bk
+
+# Flamegraph files
+flamegraph.svg
+perf.data*
+
+# Playwright
+test-results/
+playwright-report/
+*.trace.zip
+
+# Model files
+*.onnx
+*.bin
+*.safetensors
+
+# Secret files
+.env
+
+# Grading
+result.json
